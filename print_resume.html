@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Print_Resume</title>
+  <!-- font link -->
+  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+  <!-- css link -->
+  <link rel="stylesheet" href="./css/styles.css">
+  <!-- bootstrap link -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <div class="first_block">
+
+    <div class="left">
+      <div class="name">
+        <span id="fname"></span>
+        <span id="lname"></span>
+      </div>
+    </div>
+
+  <div class="right">
+    <span id="city"></span>
+    <span id="state"></span>
+    <span id="zipcode"></span><br>
+    <span id="phone"></span><br>
+    <span id="email"></span>
+  </div>
+
+  </div>
+
+  <div class="" style="margin:5px; padding:5px;">
+    <h6><u>About me</u></h6>
+    <span id="about"></span>
+
+  </div>
+  <hr>
+  <button type="button" onclick="window.print()" name="button">Print</button>
+  <button type="button" onclick="window.location.href='/C:/Users/Sandeep/Desktop/Resume_Project/index.html'" name="button">Back</button>
+
+
+
+  <script type="text/javascript">
+    document.getElementById("fname").innerHTML = localStorage.getItem("firstname");
+    document.getElementById("lname").innerHTML = localStorage.getItem("lastname");
+    document.getElementById("city").innerHTML = localStorage.getItem("city");
+    document.getElementById("state").innerHTML = localStorage.getItem("state");
+    document.getElementById("zipcode").innerHTML = localStorage.getItem("zipcode");
+    document.getElementById("phone").innerHTML = localStorage.getItem("phone");
+    document.getElementById("email").innerHTML = localStorage.getItem("email");
+    document.getElementById("about").innerHTML = localStorage.getItem("about");
+  </script>
+</body>
+
+</html>

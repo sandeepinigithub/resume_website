@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Resume_Builder</title>
+
+</head>
+
+<body>
+  <h1><center>
+    Enter Your Details Here!!
+  </center></h1>
+  <!-- Form for resume -->
+  <div class="">
+    <form class="" action="print_resume.html" method="post">
+      <input type="text" id="fname" name="" value="" placeholder="First Name">
+      <input type="text" id="lname" name="" value="" placeholder="Last Name"><br><br>
+      <input type="text" id="city" name="" value="" placeholder="City"><br><br>
+      <input type="text" id="state" name="" value="" placeholder="State/Province"><br><br>
+      <input type="text" id="zipcode" name="" value="" placeholder="Zip Code"><br><br>
+      <input type="text" id="phone" name="" value="" placeholder="Phone"><br><br>
+      <input type="email" id="email" name="" value="" placeholder="Email"><br><br>
+      <textarea name="name" id="about" rows="8" cols="80" placeholder="Write about yourself"></textarea><br><br>
+
+
+
+      <input type="submit" onclick="fun1();" name="" value="Click to Generate">
+    </form>
+
+  </div>
+  <!-- Javascript Coding and logic -->
+  <script type="text/javascript">
+    // fun1() : it transfer current page value to another page
+    function fun1() {
+      var firstname = document.getElementById("fname").value;
+      var lastname = document.getElementById("lname").value;
+      var city = document.getElementById("city").value;
+      var state = document.getElementById("state").value;
+      var zipcode = document.getElementById("zipcode").value;
+      var phone = document.getElementById("phone").value;
+      var email = document.getElementById("email").value;
+      var about = document.getElementById("about").value;
+      localStorage.setItem("firstname", firstname); //the first one is key value
+      localStorage.setItem("lastname", lastname);
+      localStorage.setItem("city", city);
+      localStorage.setItem("state", state);
+      localStorage.setItem("zipcode", zipcode);
+      localStorage.setItem("phone", phone);
+      localStorage.setItem("email", email);
+      localStorage.setItem("about", about);
+
+      return false;
+    }
+  </script>
+</body>
+
+</html>

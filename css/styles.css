@@ -1,0 +1,30 @@
+.name{
+font-family: 'Bowlby One SC', cursive;
+font-size: 35px;
+margin: 5px;
+
+}
+
+.left {
+    text-align: left;
+    float: left;
+}
+.right {
+    text-align: right;
+    float: right;
+    margin-right: 5px
+    position: fixed;
+}
+.left, .right {
+    display: inline-block;
+    width: 50%;
+    color:#f9f9f9
+}
+
+.first_block{
+  background-color: #30475e;
+  height: 100px;
+  width: 100%;
+  padding: 5px;
+
+}
